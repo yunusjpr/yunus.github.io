@@ -32,6 +32,7 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+  color: #ffffff
 }
 
 .code {
@@ -77,7 +78,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 .center::before {
@@ -105,33 +106,32 @@
 }
 
 .logo,
-.thirteen {
+.profilePicture {
   position: relative;
 }
 
-.thirteen {
+.profilePicture {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
+  width: 150px;
+  height: 150px;
   padding: 25px 10px;
-  margin-left: 16px;
   transform: translateZ(0);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
 }
 
-.thirteen::before,
-.thirteen::after {
+.profilePicture::before,
+.profilePicture::after {
   content: '';
   position: absolute;
   z-index: -1;
 }
 
 /* Conic Gradient Animation */
-.thirteen::before {
+.profilePicture::before {
   animation: 6s rotate linear infinite;
   width: 200%;
   height: 200%;
@@ -139,7 +139,7 @@
 }
 
 /* Inner Square */
-.thirteen::after {
+.profilePicture::after {
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
@@ -164,7 +164,7 @@
 }
 
 @media (prefers-reduced-motion) {
-  .thirteen::before {
+  .profilePicture::before {
     animation: none;
   }
 
@@ -195,7 +195,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 0rem;
   }
 
   .center::before {
@@ -203,7 +203,7 @@
     height: 300px;
   }
 
-  .description {
+  /* .description {
     font-size: 0.8rem;
   }
 
@@ -240,14 +240,13 @@
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
-    height: 200px;
     background: linear-gradient(
       to bottom,
       transparent 0%,
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
-  }
+  } */
 }
 
 /* Tablet and Smaller Desktop */
@@ -262,9 +261,12 @@
     filter: invert(1);
   }
 
-  .logo,
-  .thirteen img {
+  .logo img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+
+  .profilePicture img {
+    filter: drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
