@@ -1,6 +1,5 @@
 import React from 'react'
-import { Email, GitHub, LinkedIn, MapsHomeWork, WhatsApp } from "@mui/icons-material";
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from "@mui/material";
+import { List, ListItemButton, ListItemText, Typography } from "@mui/material";
 
 const Education = () => {
   return (

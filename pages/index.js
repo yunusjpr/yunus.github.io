@@ -7,6 +7,7 @@ import { styled } from '@mui/material/styles'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 import Profile from '@/components/Profile'
 import Education from '@/components/Education'
+import Skill from '@/components/Skill'
 
 const LightTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -25,9 +26,6 @@ const Home = () => {
   const [openSkill, setOpenSkill] = React.useState(false);
   const [openExperience, setOpenExperience] = React.useState(false);
 
-  const skill = (
-    <></>
-  );
   const experience = (
     <></>
   );
@@ -120,7 +118,7 @@ const Home = () => {
                   disableFocusListener
                   disableHoverListener
                   disableTouchListener
-                  title={skill}
+                  title={(<Skill/>)}
                   placement="top"
                 >
                 <Button className={styles.code} style={{minWidth: '200px'}} variant="outlined" onClick={() => setOpenSkill(!openSkill)}>Skill</Button>

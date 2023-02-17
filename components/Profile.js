@@ -1,6 +1,6 @@
 import React from 'react'
 import { Email, GitHub, LinkedIn, MapsHomeWork, OpenInNew, WhatsApp } from "@mui/icons-material";
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from "@mui/material";
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 
 const Profile = () => {
   return (
