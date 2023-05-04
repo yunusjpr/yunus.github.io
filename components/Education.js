@@ -3,7 +3,7 @@ import { List, ListItemButton, ListItemText, Typography } from "@mui/material";
 
 const Education = () => {
   return (
-    <List sx={{ width: '100%', maxWidth: 1000 }}>
+    <List sx={{ width: '100%', maxWidth: 1000, maxHeight: '450px', overflowY: 'auto' }}>
       <ListItemButton>
         <ListItemText 
           primary={

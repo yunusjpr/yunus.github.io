@@ -4,7 +4,7 @@ import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText 
 
 const Profile = () => {
   return (
-    <List sx={{ width: '100%', maxWidth: 1000 }}>
+    <List sx={{ width: '100%', maxWidth: 1000, maxHeight: '450px', overflowY: 'auto' }}>
       <ListItem>
         <ListItemText
           classes={{

@@ -8,6 +8,7 @@ import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 import Profile from '@/components/Profile'
 import Education from '@/components/Education'
 import Skill from '@/components/Skill'
+import Experience from '@/components/Experience'
 
 const LightTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -25,10 +26,6 @@ const Home = () => {
   const [openEducation, setOpenEducation] = React.useState(false);
   const [openSkill, setOpenSkill] = React.useState(false);
   const [openExperience, setOpenExperience] = React.useState(false);
-
-  const experience = (
-    <></>
-  );
 
   return (
     <>
@@ -138,7 +135,7 @@ const Home = () => {
                   disableFocusListener
                   disableHoverListener
                   disableTouchListener
-                  title={experience}
+                  title={(<Experience/>)}
                   placement="top"
                 >
                 <Button className={styles.code} style={{minWidth: '200px'}} variant="outlined" onClick={() => setOpenExperience(!openExperience)}>Experience</Button>

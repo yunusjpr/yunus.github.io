@@ -3,7 +3,7 @@ import { Avatar, Divider, List, ListItem, ListItemAvatar, ListItemButton, ListIt
 
 const Skill = () => {
   return (
-    <List sx={{ width: '100%', maxWidth: 1000 }}>
+    <List sx={{ width: '100%', maxWidth: 1000, maxHeight: '450px', overflowY: 'auto' }}>
       <ListItem>
         <ListItemText primary="NodeJs Framework" />
       </ListItem>
